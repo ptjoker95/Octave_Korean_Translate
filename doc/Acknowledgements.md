@@ -117,7 +117,7 @@
 * The United States Department of Energy, through grant number DE-FG02-04ER25635.
 * Ashok Krishnamurthy, David Hudak, Juan Carlos Chaves, and Stanley C. Ahalt of the Ohio Supercomputer Center.
 * The National Science Foundation, through grant numbers CTS-0105360, CTS-9708497, CTS-9311420, CTS-8957123, and CNS-0540147.
-* The industrial members of the Texas-Wisconsin Modeling and Control Consortium (TWMCC).
+* The industrial members of the Texas-Wisconsin Modeling and Control Consortium ([TWMCC](http://www.che.utexas.edu/twmcc)).
 * The Paul A. Elfers Endowed Chair in Chemical Engineering at the University of Wisconsin-Madison.
 * Digital Equipment Corporation, for an equipment grant as part of their External Research Program.
 * Sun Microsystems, Inc., for an Academic Equipment grant.
@@ -126,7 +126,7 @@
 * The University of Texas College of Engineering, for providing a Challenge for Excellence Research Supplement, and for providing an Academic Development Funds grant.
 * The State of Texas, for providing funding through the Texas Advanced Technology Program under Grant No. 003658-078.
 * Noel Bell, Senior Engineer, Texaco Chemical Company, Austin Texas.
-* John A. Turner, Group Leader, Continuum Dynamics (CCS-2), Los Alamos National Laboratory, for registering the octave.org domain name.
+* John A. Turner, Group Leader, Continuum Dynamics (CCS-2), Los Alamos National Laboratory, for registering the [octave.org](http://www.gnu.org/software/octave/doc/interpreter/octave.org) domain name.
 * James B. Rawlings, Professor, University of Wisconsin-Madison, Department of Chemical and Biological Engineering.
 * Richard Stallman, for writing GNU.
 
