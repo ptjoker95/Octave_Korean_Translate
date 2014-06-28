@@ -11,4 +11,5 @@ Permission is granted to copy and distribute translations of this manual into an
 목차
 
 * [Preface] (Preface.md)
+  * [Acknowledgements] (Acknowledgements.md)
 
