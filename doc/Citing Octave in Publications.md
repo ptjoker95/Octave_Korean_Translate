@@ -5,7 +5,6 @@
 ```
 Command: citation
 Command: citation package
-```
 
     GNU 옥타브나 패키지 배포를 위한 인용을 위한 방법을 보여줍니다.
 
