@@ -15,4 +15,4 @@ Permission is granted to copy and distribute translations of this manual into an
   * [Citing Octave in Publications] (Citing\ Octave\ in\ Publications.md)
   * [How You Can Contribute to Octave] (How\ You\ Can\ Contribute\ to\ Octave.md)
   * [Distribution] (Distribution.md)
-* [A Brief Introduction to Octave](A\ Brief\ Introduction\ to\ Octave.md)
+* [1 A Brief Introduction to Octave](A\ Brief\ Introduction\ to\ Octave.md)
