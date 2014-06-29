@@ -13,5 +13,5 @@ Permission is granted to copy and distribute translations of this manual into an
 * [Preface] (Preface.md)
   * [Acknowledgements] (Acknowledgements.md)
   * [Citing Octave in Publications] (Citing\ Octave\ in\ Publications.md)
-
+  * [How You Can Contribute to Octave] (How\ You\ Can\ Contribute\ to\ Octave.md)
 
