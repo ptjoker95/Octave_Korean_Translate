@@ -23,3 +23,6 @@ Permission is granted to copy and distribute translations of this manual into an
 	  * [1.2.3 Matrix Arithmetic]
 	  * [1.2.4 Solving Systems of Linear Equations]
 	  * [1.2.5 Integrating Differential Equations]
+	  * [1.2.6 Producing Graphical Output]
+	  * [1.2.7 Editing What You Have Typed]
+	  * [1.2.8 Help and Documentation]
