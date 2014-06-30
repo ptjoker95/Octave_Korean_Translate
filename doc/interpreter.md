@@ -17,3 +17,4 @@ Permission is granted to copy and distribute translations of this manual into an
   * [Distribution] (Distribution.md)
 * [1 A Brief Introduction to Octave](A\ Brief\ Introduction\ to\ Octave.md)
   * [1.1 Running Octave](Running\ Octave.md)
+    * [1.2 Simple Examples](Simple\ Examples.md)
