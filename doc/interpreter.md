@@ -18,7 +18,7 @@ Permission is granted to copy and distribute translations of this manual into an
 * [1 A Brief Introduction to Octave](A\ Brief\ Introduction\ to\ Octave.md)
   * [1.1 Running Octave](Running\ Octave.md)
     * [1.2 Simple Examples](Simple\ Examples.md)
-      * [1.2.1 Elementary Calculations] ()
+      * [1.2.1 Elementary Calculations] (Simple\ Examples.md#121-기본적인-계산들)
 	  * [1.2.2 Creating a Matrix] ()
 	  * [1.2.3 Matrix Arithmetic] ()
 	  * [1.2.4 Solving Systems of Linear Equations] ()
