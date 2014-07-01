@@ -1,4 +1,4 @@
-머릿말
+#머릿말
 
  옥타브는 Wisconsin_Madison 대학의 James B. Rawlings와 Texas 대학의 John G. Ekerdt에 의해서 만들어졌으며, 학부생 수준의 화학반응의 설계에 관한 텍스트에 사용되는 비교 소프트로 사용되기를 바랬었다.
 
