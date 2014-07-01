@@ -4,8 +4,8 @@
 
 | Ben Abbott | Andy Adler | Adam H. Aitkenhead |
 | -- | -- | -- |
+| Giles Anderson | Joel Andersson | Muthiah Annamalai |
 
- Giles Anderson		Joel Andersson				Muthiah Annamalai
  Markus Appel				Marco Atzeri				Shai Ayal
  Roger Banks				Ben Barrowes				Alexander Barth
  David Bateman				Heinz Bauschke				Julien Bect
