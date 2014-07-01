@@ -2,7 +2,6 @@
 
  많은 분들이 옥타브의 발전에 공헌하셨습니다. 아래의 분들이 옥타브의 코드 부분을 도와주셨으며 다른 방법으로 도움을 주셨습니다. (알파벳 순)
 
------------- | -------------------------- | ----------------------------------------
  Ben Abbott|Andy Adler|Adam H. Aitkenhead
  Giles Anderson		Joel Andersson				Muthiah Annamalai
  Markus Appel				Marco Atzeri				Shai Ayal
@@ -113,7 +112,6 @@
  Martin Weiser				Michael Weitzel				David Wells
  Fook Fah Yap				Sean Young				Michael Zeising
  Federico Zenith			Alex Zvoleff
- -------------------- | ----------------------- | -----------------------------
 
 아래에 있는 옥타브의 발전에 도움을 주신 분들과 기관에 특별히 감사드립니다.
 * The United States Department of Energy, through grant number DE-FG02-04ER25635.
