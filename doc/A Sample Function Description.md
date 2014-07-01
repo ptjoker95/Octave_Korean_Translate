@@ -4,9 +4,9 @@
 
  가장의 함수 `foo`를 설명해보겠습니다:
 
- ##Function File: foo (*x*)
- ##Function File: foo (*x,y*)
- ##Function File: foo (*x,y,...*)
+##Function File: foo (*x*)
+##Function File: foo (*x,y*)
+##Function File: foo (*x,y,...*)
 
    `foo`함수는 *y*에서 *x*를 빼고, 나머지 값들을 결과에 더합니다. 만일 *y*가 없으면 19가 기본적으로 쓰입니다.
 
