@@ -28,4 +28,10 @@ Permission is granted to copy and distribute translations of this manual into an
 	  * [1.2.8 Help and Documentation] (Simple\ Examples.md#128-도움말과-문서)
 	* [1.3 Conventions] (Conventions.md)
 	  * [1.3.1 Fonts] (Fonts.md)
+      * [1.3.2 Evaluation Notation] (Evaluation\ Notation.md)
+	  * [1.3.3 Printing Notation] (Printing\ Notation.md)
+	  * [1.3.4 Error Messages] (Error\ Messages.md)
+	  * [1.3.5 Format of Descriptions] (Format\ of\ Descriptions.md)
+	    * [1.3.5.1 A Sample Function Description] (A\ Sample\ Function\ Description.md)
+		* [1.3.5.2 A Sample Command Description] (A\ Sample\ Command\ Description.md)
 
