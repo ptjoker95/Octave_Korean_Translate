@@ -27,4 +27,5 @@ Permission is granted to copy and distribute translations of this manual into an
 	  * [1.2.7 Editing What You Have Typed] ()
 	  * [1.2.8 Help and Documentation] ()
 	* [1.3 Conventions] (Conventions.md)
+	  * [1.3.1 Fonts] (Fonts.md)
 
