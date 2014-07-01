@@ -2,9 +2,8 @@
 
  많은 분들이 옥타브의 발전에 공헌하셨습니다. 아래의 분들이 옥타브의 코드 부분을 도와주셨으며 다른 방법으로 도움을 주셨습니다. (알파벳 순)
 
-| | | |
+| Ben Abbott | Andy Adler | Adam H. Aitkenhead |
 | -- | -- | -- |
-|Ben Abbott|Andy Adler|Adam H. Aitkenhead|
 
  Giles Anderson		Joel Andersson				Muthiah Annamalai
  Markus Appel				Marco Atzeri				Shai Ayal
