@@ -1,4 +1,4 @@
-옥타브에 참여 방법
+#옥타브에 참여 방법
 
  옥타브를 더 좋은 시스템으로 만들기 위해 도울 수 있는 방법은 많습니다. 새로운 문제를 풀기위한 높은 품질의 코딩을 하고 다른 사람들이 자유롭게 그 코드를 사용할 수 있도록 하는 것이 가장 중요할 것입니다. 새로운 코드에 관한 자세한 정보는 [참여 방법](http://www.gnu.org/software/octave/doc/interpreter/Contributing-Guidelines.html#Contributing-Guidelines)을 참고하십시요.
 
