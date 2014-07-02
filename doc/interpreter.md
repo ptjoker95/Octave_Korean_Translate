@@ -34,4 +34,4 @@ Permission is granted to copy and distribute translations of this manual into an
 	  * [1.3.5 Format of Descriptions] (Format\ of\ Descriptions.md)
 	    * [1.3.5.1 A Sample Function Description] (A\ Sample\ Function\ Description.md)
 		* [1.3.5.2 A Sample Command Description] (A\ Sample\ Command\ Description.md)
-
+    * [2 Getting Started](Getting\ Started.md)
