@@ -52,4 +52,98 @@
  
  `--info-program **program**`
 
-   
+   사용할 info 프로그램의 이름을 지정합니다. 명령줄에서 지정된 **program**의 값은 기본적으로 지정된 `OCTAVE_INFO_PROGRAM`값을 대체합니다. Info 프로그램은 기본 함수 `info_program`으로 시스템이나 사용자가 확인 및 수정할 수 있습니다.
+ 
+ `--interactive`
+ `-i`
+
+   대화식 환경을 지정합니다. 이 옵션은 리모트 쉘이나 Emacs 쉘 버퍼에서 옥타브를 실행할 때 유용합니다. Emacs에서 옥타브를 실행하는 다른 방법은 [Emacs Octave Support](Emacs\ Octave\ Support.md)를 참고하십시요.
+ 
+ `--jit-compiler`
+
+   액설러레이팅 루프를 사용할 때 JIT 컴파일러를 사용합니다.
+ 
+ `--line-editing`
+
+   Force readline use for command-line editing (번역 필요)
+ 
+ `--no-gui`
+
+   그래픽 유저 인터페이스(GUI) 대신 커맨드 라인 인터페이스(CLI)를 사용합니다.
+ 
+ `--no-history`
+ `-H`
+ 
+   명령문 기록을 하지 않습니다.
+ 
+ `--no-init-file`
+
+   초기설정 파일 `~/.octaverc`와 `.octaverc`을 읽지 않습니다.
+ 
+ `--no-init-path`
+
+   기본 경로를 포함한 검색 경로를 초기화하지 않습니다.
+
+ `--no-line-editing`
+
+   명령문 수정을 하지 않습니다.
+ 
+ `--no-site-file`
+
+   초기설정 파일 `octaverc`를 읽지 않습니다.
+ 
+ `--no-window-system`
+ `-W`
+
+   그래픽을 포함한 윈도우 시스템을 사용하지 않습니다. 터미널 환경만 사용하도록 합니다.
+ 
+ `--norc`
+ `-f`
+
+   시작할 때에 시스템이나 사용자의 어떤 초기설정 파일도 읽어오지 않습니다. 이것은 `--no-init-file`과 `--no-site-file`을 같이 사용한 것과 같습니다.
+ 
+ `--path **path**`
+ `-p **path**`
+
+   함수 파일을 찾는 검색 경로의 헤드를 추가합니다. **path**의 값은 기본적으로 지정된 `OCTAVE_PATH`값을 대체합니다. 경로 지정 함수 중에 하나로 시스템이나 사용자가 별도로 경로를 지정할 수 있습니다.
+ 
+ `--persist`
+
+   `--eval` 옵션이 실행된 뒤나 명령줄에서 지정된 파일을 읽은 후에 대화형 모드로 진행됩니다.
+ 
+ `--silent`
+ `--quiet`
+ `-q`
+
+   시작할 때 표시되는 문구나 버전 메세지를 표시하지 않습니다.
+ 
+ `--texi-macros-file **filename**`
+
+   makeinfo에서 사용되는 Texinfo 매크로를 포함한 파일의 이름을 지정합니다.
+ 
+ `--traditional`
+ `--braindead`
+
+   `MATLAB`과 같이 사용자 설정 초기값을 다음과 같이 지정합니다.
+
+	PS1										=	">> "
+	PS2										=	""
+	allow_noninteger_range_as_index			=	true
+	beep_on_error							=	true
+	confirm_recursive_rmdir					=	false
+	crash_dumps_octave_core					=	false
+	save_default_options					=	"-mat-binary"
+	do_braindead_shortcircuit_evaluation	=	true
+	fixed_point_format						=	true
+	history_timestamp_format_string			=	"%%-- %D %I:%M %p --%%"
+	page_screen_output						=	false
+	print_empty_dimensions					=	false
+
+   그리고 다음의 경고를 끕니다.
+
+   	Octave:abbreviated-property-match
+	Octave:fopen-file-in-path
+	Octave:function-name-clash
+	Octave:load-file-in-path
+
+   이 옵션은 작성한 코드가 옥타브에서는 작동하지만 `MATLAB`에서는 작동하지 않는다는 걸 알려주는, `Octave:matlab-incompatible` 경고를 끄지 않습니다. ([warning](Issuing\ Warnings.md), [warning_ids](Issuing\ Warnings.md) 를 참고하십시요.)
