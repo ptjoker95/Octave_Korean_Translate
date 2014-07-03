@@ -175,13 +175,13 @@
 
    옥타브 스크립트 실행문을 쓰고 싶을 때, `argv` 는 스크립트에 전해진 조건의 리스트를 출력할 것입니다. 옥타브 스크립트 실행문을 만드는 예제는 [Executable Octave Programs](Executable\ Octave\ Programs.md)를 참고하십시요.
  
- **기본함수: program_name()**
+#####기본함수: program_name()
 
    `program_invocation_name`에서 반환된 값의 마지막 구성을 출력합니다.
 
    참고: [Program_invocation_name]()
  
- **기본함수: program_invocation_name()**
+#####기본함수: program_invocation_name()**
 
    옥타브를 실행할 때, 프롬프트 상에서 쓰여진 이름을 반환합니다.
 
