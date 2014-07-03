@@ -192,11 +192,11 @@
 
    위의 함수를 이용해  옥타브를 실행할 때 사용된 옵션을 보여주는 예입니다.
 
-     `printf ("%s", program_name())`
-	 `arg_list = argv ();`
-	 `for i = 1:nargin`
-	 `  printf ( " %s", arg_list{i})`
-	 `endfor`
-	 `printf ("\n")`
+     printf ("%s", program_name())
+	 arg_list = argv ();
+	 for i = 1:nargin
+	   printf ( " %s", arg_list{i})
+	 endfor
+	 printf ("\n")
 
    셀 어레이에서 객체들을 찾는 설명은 [Indexing Cell Arrays](Indexing\ Cell\ Arrays.md)을 참고하십시요. 그리고 `nargin` 변수에 관한 정보는 [Defining Functions](Defining\ Functions.md)를 참고하십시요.
