@@ -187,7 +187,7 @@
 
    명령줄에서 스크립트를 실행(예: `octave foo.m`)하거나 옥타브 스크립트를 실행할 때, 프로그램의 이름은 스크립트의 이름으로 정해집니다. 옥타브 스크립트를 만드는 예는 [Executable Octave Programs](Executable\ Octave\ Programs.md)를 참고하십시요.
 
-   참고: [program_name](Command\ Line\ Options.md#####기본함수:-program_name)
+   참고: [program_name](Command%20Line%20Options.md#%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98-program_name)
    
 
    위의 함수를 이용해  옥타브를 실행할 때 사용된 옵션을 보여주는 예입니다.
