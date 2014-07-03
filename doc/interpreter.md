@@ -36,3 +36,5 @@ Permission is granted to copy and distribute translations of this manual into an
 		* [1.3.5.2 A Sample Command Description] (A\ Sample\ Command\ Description.md)
     * [2 Getting Started](Getting\ Started.md)
 	  * [2.1 Invoking Octave from the Command Line](Invoking\ Octave\ from\ the\ Command\ Line.md)
+	    * [2.1.1 Command Line Options](Command\ Line\ Options.md)
+
