@@ -147,3 +147,56 @@
 	Octave:load-file-in-path
 
    이 옵션은 작성한 코드가 옥타브에서는 작동하지만 `MATLAB`에서는 작동하지 않는다는 걸 알려주는, `Octave:matlab-incompatible` 경고를 끄지 않습니다. ([warning](Issuing\ Warnings.md), [warning_ids](Issuing\ Warnings.md) 를 참고하십시요.)
+ 
+ `--verbose`
+ `-V`
+
+   상세한 설명이 출력되는 모드입니다.
+ 
+ `--version`
+ `v`
+
+   현재 사용 중인 옥타브의 버전을 출력하고 종료합니다.
+ 
+ `*file*`
+ 
+   *file*에 있는 명령문을 실행압니다. `--persist` 옵션이 없으면 종료합니다.
+ 
+
+ 옥타브는 실행시에 추가된 옵션과 조건들을 포함하는 정보를 출력하는 몇가지 함수를 가지고 있습니다.
+
+ **기본함수: argv()**
+
+   옥타브실행시에 추가된 조건을 알려줍니다. 예를 들어, 다음과 같이 옥타브를 실행했을 때,
+
+   	`octave --no-line-editing --silent`	
+
+   `argv` 함수는 `--no-line-editing`과 `--silent`를 출력할 것입니다.
+
+   옥타브 스크립트 실행문을 쓰고 싶을 때, `argv` 는 스크립트에 전해진 조건의 리스트를 출력할 것입니다. 옥타브 스크립트 실행문을 만드는 예제는 [Executable Octave Programs](Executable\ Octave\ Programs.md)를 참고하십시요.
+ 
+ ##**기본함수: program_name()**
+
+   `program_invocation_name`에서 반환된 값의 마지막 구성을 출력합니다.
+
+   참고: [Program_invocation_name]()
+ 
+ ##**기본함수: program_invocation_name()**
+
+   옥타브를 실행할 때, 프롬프트 상에서 쓰여진 이름을 반환합니다.
+
+   명령줄에서 스크립트를 실행(예: `octave foo.m`)하거나 옥타브 스크립트를 실행할 때, 프로그램의 이름은 스크립트의 이름으로 정해집니다. 옥타브 스크립트를 만드는 예는 [Executable Octave Programs](Executable\ Octave\ Programs.md)를 참고하십시요.
+
+   참고: [program_name] ()
+   
+
+   위의 함수를 이용해  옥타브를 실행할 때 사용된 옵션을 보여주는 예입니다.
+
+     `printf ("%s", program_name())`
+	 `arg_list = argv ();`
+	 `for i = 1:nargin`
+	 `  printf ( " %s", arg_list{i})`
+	 `endfor`
+	 `printf ("\n")`
+
+   셀 어레이에서 객체들을 찾는 설명은 [Indexing Cell Arrays](Indexing\ Cell\ Arrays.md)을 참고하십시요. 그리고 `nargin` 변수에 관한 정보는 [Defining Functions](Defining\ Functions.md)를 참고하십시요.
