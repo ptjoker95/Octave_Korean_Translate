@@ -7,7 +7,7 @@
 
    *octave-home*은 옥타브가 인스톨된 경로를 의미한다.(기본적으로 `/usr/local`) 이 파일은 인스톨된 옥타브의 모든 버전과 모든 사용자에게 기본 환경의 변화를 적용한다. 모든 사용자에게 적용되기 때문에 이 파일을 변경하는 것은 조심해야 한다. 기본 파일은 환경 변수 `OCTAVE_SITE_INITFILE`에 의해 변경될 수 있다.
 
-   ***octave-home*/share/octave/version/m/startup/octaverc
+   ***octave-home*/share/octave/version/m/startup/octaverc**
 
    i*octave-home*은 옥타브가 인스톨된 경로를 의미한다.(기본적으로 `/usr/local`) 그리고 *version*은 옥타브의 버전을 의미한다. 이 파일은 인스톨된 옥타브의 특정 버전과 모든 사용자에게 기본 환경의 변화를 적용한다. 모든 사용자에게 적용되기 때문에 이 파일을 변경하는 것은 조심해야 한다. 기본 파일은 `OCTAVE_VERSION_INITFILE`에 의해 변경될 수 있다.
 
@@ -28,6 +28,7 @@
 
 
   **Function File: dump_prefs*()***
+
   **Function File: dump_prefs*(fid)***
 
-    옥타브에 의해 구문분석이 되는 형식의 사용자 지정 변수를 표시합니다. *fid*는 `fopen`으로 받을 수 있는 파일 표시자입니다. 만일 *file*이 생략되면 리스트는 stdout으로 표시됩니다.
+   옥타브에 의해 구문분석이 되는 형식의 사용자 지정 변수를 표시합니다. *fid*는 `fopen`으로 받을 수 있는 파일 표시자입니다. 만일 *file*이 생략되면 리스트는 stdout으로 표시됩니다.
