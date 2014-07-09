@@ -14,17 +14,19 @@
    옥타브가 종료될 때 호출되는 함수를 저장합니다.
 
 ```Octave
-function last_words ()
-    disp ("Bye bye");
-endfunction
-atexit ("last_words");
+	function last_words ()
+    	disp ("Bye bye");
+	endfunction
+	atexit ("last_words");
 ```
 	
-    의 식은 옥타브가 종료될 때 `"Bye bye"`라는 메세지를 출력합니다.
+  의 식은 옥타브가 종료될 때 `"Bye bye"`라는 메세지를 출력합니다.
 
-    *flag* 옵션은 옥타브가 종료될 때 호출될 함수의 목록에서 *fcn* 함수를 저장하거나 삭제할 때 사용됩니다. *flag* 옵션이 true이면 저장하고, *flag* 옵션이 false이면 삭제합니다. 예를 들어, 위에서 저장한 `last_words` 함수를 저장한 후에,
+  *flag* 옵션은 옥타브가 종료될 때 호출될 함수의 목록에서 *fcn* 함수를 저장하거나 삭제할 때 사용됩니다. *flag* 옵션이 true이면 저장하고, *flag* 옵션이 false이면 삭제합니다. 예를 들어, 위에서 저장한 `last_words` 함수를 저장한 후에,
 
-		atexit ("last_words", false);
+```Octave
+	atexit ("last_words", false);
+```
 	
     를 하게 되면 리스트에서 저 함수를 삭제하고, 옥타브가 종료될 때 `last_words`를 호출하지 않습니다.
 
