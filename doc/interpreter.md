@@ -38,4 +38,5 @@ Permission is granted to copy and distribute translations of this manual into an
 	  * [2.1 Invoking Octave from the Command Line](Invoking\ Octave\ from\ the\ Command\ Line.md)
 	    * [2.1.1 Command Line Options](Command\ Line\ Options.md)
 		* [2.1.2 Startup Files](Startup\ Files.md)
+	  * [2.2 Quitting Octave](Quitting\ Octave.md)
 
