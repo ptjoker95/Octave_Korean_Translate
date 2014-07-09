@@ -13,10 +13,12 @@
 
    옥타브가 종료될 때 호출되는 함수를 저장합니다.
 
-   		function last_words ()
-	        disp ("Bye bye");
-    	endfunction
-		atexit ("last_words");
+```Octave
+function last_words ()
+    disp ("Bye bye");
+endfunction
+atexit ("last_words");
+```
 	
     의 식은 옥타브가 종료될 때 `"Bye bye"`라는 메세지를 출력합니다.
 
