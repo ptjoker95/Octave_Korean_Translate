@@ -32,4 +32,5 @@
            * [Commands for Getting Help](doc/commands_for_getting_help.md)
            * [Command Line Editing](doc/Command_Line_Editing.md)
                * [Cursor Motion](doc/Cursor_Motion.md)
+               * [Killing and Yanking](doc/Killing_and_Yanking.md)
 
