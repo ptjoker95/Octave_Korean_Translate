@@ -1,9 +1,9 @@
-#Commands for Getting Help
+#도움말을 위한 명령어들
 
  이 매뉴얼에 있는 모든 텍스트는 *`doc`* 명령어를 통해 옥타브의 프롬프트에서 볼 수 있습니다. 더불어, 개인 사용자가 만든 함수와 변수에 관한 문서도 *`help`*명령어를 통해서 사용가능합니다. 이 섹션에서는 매뉴얼과 사용자가 만든 함수와 변수들을 위한 문서를 읽는데 사용되는 명령어에 대해 설명합니다. 직접 제작한 함수에 관한 문서를 어떻게 만드는 지에 대해서는 [Function Files](Function\ Files.md)을 참고하십시요.
 
 
- #####Command: help *name*
+ **Command: help *name***
 
  **Command: help *`--list`***
 
@@ -22,7 +22,7 @@
   **참조:** [doc](Getting\ Help.md), [lookfor](Getting\ Help.md), [which]()
 
 
-#####Command: doc *function_name*
+**Command: doc *function_name***
 
   *function_name*에 관한 문서를 GNU Info 브라우저를 이용해 온라인 버전 매뉴얼을 그대로 보여줍니다. 아무 내용없이 실행하면, 매뉴얼의 처음을 보여줍니다.
 
@@ -131,4 +131,71 @@
 
  **Built-in Function: doc_cache_file *(new_val, "local")***
 
-   옥타브 문서 캐쉬 파일의 이름을 지정한 내부 변수를 찾거나 지정합니다. 캐쉬파일은 `lookfor` 명령어의 실행을 눈에 띄게 향상시킵니다. 기본값은 `octave-home/share/octave/version/etc/doc-cache`이고, *octave-home*은 옥타브가 설치된 루트 디렉토리를, *version*은 옥타브 버전을 의미합니다.
+   옥타브 문서 캐쉬 파일의 이름을 지정한 내부 변수를 찾거나 지정합니다. 캐쉬파일은 `lookfor` 명령어의 실행을 눈에 띄게 향상시킵니다. 기본값은 `octave-home/share/octave/version/etc/doc-cache`이고, *octave-home*은 옥타브가 설치된 루트 디렉토리를, *version*은 옥타브 버전을 의미합니다. 기본값은 환경변수 `OCTAVE_DOC_CACHE_FILE`이나 명령문 옵션 `'--doc-cache-file FNAME'`으로 변경될 수 있습니다.
+
+   `"local"`옵션으로 호출되게 되면, 변수는 불려진 함수와 서브루틴에 국한되게 됩니다. 함수가 종료되면 원래 값으로 되돌아오게 됩니다.
+
+   **참조:** [doc_cache_create](), [lookfor](), [info_program](), [doc](), [help](), [makeinfo_program]()
+
+
+**Built-in Function: val = built_in_docstrings_file *()***
+**Built-in Function: *old_val* = built_in_docstrings_file *(new_val)***
+**Built-in Function: built_in_docstrings_file *(new_val, "local")***
+
+ 옥타브 기본 함수에 관한 문서열에 관한 파일의 이름을 지정하는 내부 변수를 찾거나 지정합니다. 기본값은 `octave-home/share/octave/version/etc/built-in-docstrings`이고, *octave-home*은 옥타브가 설치된 루트 디렉토리를, *version*은 옥타브 버전을 의미합니다. 기본값은 환경변수 `OCTAVE_BUILT_IN_DOCSTRINGS_FILE`이나 명령문 옵션 `'built-in-docstrings-file FNAME'`으로 변경될 수 있습니다.
+
+  주의: 이 변수는 옥타브가 초기화될 때에만 사용됩니다. 실행중인 세션에서의 변경은 아무 영향을 미치지 않습니다.
+
+
+**Built-in Functions: *val* = suppress_verbose_help_message *()***
+**Built-in Functions: *old_val* = suppress_verbose_help_message *(new_val)***
+**Built-in Functions: suppress_verbose_help_message *(new_val, "local")***
+
+옥타브가 `help` 명령어와 기본 명령어의 사용방법에 관한 메세지의 끝에 추가 정보를 더할 것인지를 조절하는 내부변수를 찾거나 지정합니다.
+
+`"local"`옵션으로 함수내부에서 호출되면, 변수는 호출된 함수와 서브루틴에 국한되어 변경됩니다. 함수가 종료되면 원래 값으로 되돌아오게 됩니다.
+
+
+
+ 다음의 함수들은 문서를 만들기 위해 옥타브에 의해서 기본적으로 내부에서 사용됩니다. 사용자들에게 종종 유용할 뿐 아니라, 정확한 사용방법을 위해 이곳에서 설명하겠습니다.
+
+ **Function File: doc_cache_create *(out_file, directory)***
+
+  주어진 경로에 모든 함수에 관한 문서 캐쉬를 만듭니다.
+
+  문서 캐쉬는 *directory*에  모든 함수에 대해 만들어집니다. 결과 캐쉬는 *out_file*에 저장되게 됩니다. 이 캐쉬는 `lookfor`의 속도를 개선하는 데 사용됩니다.
+
+  경로가 없다면(혹은 빈 행렬이라면), 기본 연산을 위한 캐쉬가 만들어집니다.
+
+  **참조**:* [doc_cache_file](), [lookfor](), [path]()
+
+ **Built-in Function: *[text, format]* = get_help_text *(name)***
+
+ 함수 *name*의 도움말 텍스트의 원형을 리턴합니다.
+
+ 도움말 원형은 *text*와 *format*을 보여줍니다. 형식은 `"texinfo","html"`이나 `"plain text"`중 하나의 문자열입니다.
+
+ **Built-in Function: *[text, format]* = get_help_text_from_file *(fname)***
+
+ 파일 *fname*으로부터 도움말 텍스트의 원형을 리턴합니다.
+
+ 도움말 원형은 *text*와 *format*을 보여줍니다. 형식은 `"texinfo","html"`이나 `"plain text"`중 하나의 문자열입니다.
+
+
+**Function File: *[text, status]* = get_first_help_sentence *(name)***
+**Function File: *[text, status]* = get_first_help_sentence *(name, max_len)***
+
+ 함수의 도움말 텍스트의 첫번째 문장을 리턴합니다.
+
+ 첫번째 문장이라함은, 함수 선언 이후의 문장에서 첫번째 마침표(".")나 첫번째 두개의 줄바꿈표시("\n\n")가 나올 때까지입니다. 문장은 최대 *max_len*까지 이며, 그 값은 80입니다.
+
+ *status*는 *makeinfo*에 의해 리포트된 상태를 리턴합니다. 만일 하나의 결과문만 필요하다면, *status*의 값은 0이 아니고, 결고표시가 나타납니다.
+
+ 예를 들어, 이 도움말의 첫번째 문장은
+
+ ```
+ get_first_help_sentence ("get_first_help_sentence")
+ -l ans = Return the first sentence of a function's help text.
+ ```
+
+ 입니다.

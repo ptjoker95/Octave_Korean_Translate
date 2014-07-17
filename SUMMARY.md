@@ -29,8 +29,10 @@
                * [Command Line Options](doc/Command_Line_Options.md)
                * [Startup Files](doc/Startup_Files.md)
            * [Quitting Octave](doc/Quitting_Octave.md)
-           * [Commands for Getting Help](doc/commands_for_getting_help.md)
+           * [Commands for Getting Help](doc/Commands_for_Getting_Help.md)
            * [Command Line Editing](doc/Command_Line_Editing.md)
                * [Cursor Motion](doc/Cursor_Motion.md)
                * [Killing and Yanking](doc/Killing_and_Yanking.md)
+               * [Commands For Changing Text](doc/commands_for_changing_text.md)
+               * [Letting Readline Type For You](doc/letting_readline_type_for_you)
 
