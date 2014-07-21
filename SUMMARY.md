@@ -34,6 +34,6 @@
                * [Cursor Motion](doc/Cursor_Motion.md)
                * [Killing and Yanking](doc/Killing_and_Yanking.md)
                * [Commands For Changing Text](doc/commands_for_changing_text.md)
-               * [Letting Readline Type For You](doc/letting_readline_type_for_you)
+               * [Letting Readline Type For You](doc/letting_readline_type_for_you.md)
                * [Commands For Manipulating The History](doc/commands_for_manipulating_the_history.md)
 
