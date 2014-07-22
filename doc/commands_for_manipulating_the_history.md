@@ -145,3 +145,49 @@ run_history -1 -2
 `history_control`은 히스토리 리스트에 명령어를 어떻게 저장할 지를 지정하는 값들을 콜론으로 분리한 리스트입니다. 만일 리스트에 `ignorespace`가 있으면, 히스토리 리스트에 빈칸으로 시작하는 명령문은 저장하지 않습니다. `ignoredups`는 히스토리에 같은 명령문이 있으면 저장하지 않습니다. `ignoreboth`는 `ignorespace`와 `ignoredups`를 모두 실행합니다. `erasedups`는 현재의 명령문과 같은 것이 히스토리에 있으면, 히스토리에 있는 명령문들을 모두 지운 후 현재의 명령문을 저장합니다. 위의 값들이 아닌 값은 무시합니다. `history_control`이 빈 문자열이면, 모든 명령어들은 `history_save`의 값이 붙어서 히스토리 리스트에 저장됩니다.
 
 **참조:** [history_file](), [history_size](), [history_timestamp_format_string](), [history_save]().
+
+**Built-in Function: *val* = history_file *()***
+
+**Built-in Function: *old_val* = history_file *(new_val)***
+
+명령어 히스토리를 저장하는 파일의 이름을 지정하는 내부 변수를 보여주거나 설정합니다. 기본값은 `~/.octave_hist`이지만, 환경변수 `OCTAVE_HISTFILE`에 겹쳐질 수 있습니다.
+
+**참조: ** [history_size](), [history_save](), [history_timestamp_format_string]()
+
+**Built-in Function: *val* = history_size *()***
+
+**Built-in Function: *old_val* = history_size *(new_val)***
+
+히스토리 파일에 저장할 갯수를 정하는 내부 변수를 보여주거나 설정합니다. 기본값은 `1000`이자만, 환경변수 `OCTAVE_HISTSIZE`로 겹쳐질 수 있습니다.
+
+**참조: ** [history_file](), [history_timestamp_format_string](), [history_save]()
+
+**Built-in Function: *val* = history_timestamp_format_string *()***
+
+**Built-in Function: *old_val* = history_timestamp_format_string *(new_val)***
+
+**Built-in Function: history_timestamp_format_string *(new_val, "local")***
+
+옥타브가 종료될 때 히스토리 파일에 쓰여질 주석의 형식을 지정하는 내부 변수를 보여주거나 설정합니다. 형식 문자열은 `strftime`에 넘겨집니다. 기본값은
+```
+    "# Octave VERSION, %a %b %d %H:%M:%S %Y %Z <USER@HOST>"
+```
+입니다.
+
+`"local"` 옵션을 가진 함수 내부에서 호출되었을 경우, 그 함수와 그 함수에 의해 호출된 서브루틴에 국한되어 값이 변합니다. 그 함수가 종료되면 원래 값으로 되돌아갑니다.
+
+**참조: ** [strftime](), [history_file](), [history_size](), [history_save]()
+
+**Built-in Function: *val* = EDITOR *()***
+
+**Built-in Function: *old_val* = EDITOR *(new_val)***
+
+**Built-in Function: EDITOR *(new_val, "local")***
+
+기본 문서편집기를 정하는 내부 변수를 보거나 지정합니다.
+
+기본값은 옥타브가 시작될 때 환경변수 `EDITOR`에 의해 정해집니다. 만일 환경변수가 초기화되지 않으면, `EDITOR`는 `"emacs"`로 정해집니다.
+
+`"local"`옵션으로 함수 내부에서 호출되면, 그 함수와 그 함수에 의해 호출된 서브루틴에 국한되어 값이 변합니다. 그 함수가 종료되면 원래 값으로 되돌아갑니다.
+
+**참조: ** [edit](), [edit_history]()
