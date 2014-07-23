@@ -37,4 +37,5 @@
                * [Letting Readline Type For You](doc/letting_readline_type_for_you.md)
                * [Commands For Manipulating The History](doc/commands_for_manipulating_the_history.md)
                * [Customizing readline](doc/customizing_`readline`.md)
+               * [Customizing the Prompt](doc/customizing_the_prompt.md)
 
