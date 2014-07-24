@@ -38,4 +38,5 @@
                * [Commands For Manipulating The History](doc/commands_for_manipulating_the_history.md)
                * [Customizing readline](doc/customizing_`readline`.md)
                * [Customizing the Prompt](doc/customizing_the_prompt.md)
+               * [Diary and Echo Commands](doc/diary_and_echo_commands.md)
 
